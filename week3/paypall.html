@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head style="display: flex; flex-wrap: wrap">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Wallets, Money Management, and More</title>
+
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(0, 28, 100);
+      }
+
+      a {
+        text-decoration: none;
+        color: #003087;
+      }
+
+      img:hover {
+        border: 0.5px solid grey;
+        border-radius: 10px;
+      }
+
+      #header {
+        height: 80px;
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 12px 24px;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.06),
+          0 0 2px rgba(0, 0, 0, 0.07);
+        flex-wrap: wrap;
+      }
+
+      #header-left {
+        display: flex;
+        align-items: center;
+      }
+
+      #header-left-navigation {
+        margin-left: 24px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .header-left-navigation-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 0px 16px;
+        border-radius: 32px;
+      }
+
+      .header-left-navigation-item:hover {
+        cursor: pointer;
+        background-color: rgb(190, 255, 255);
+        font-weight: bold;
+      }
+
+      .header-left-navigation-item:hover .arrow {
+        transform: rotate(-135deg);
+      }
+
+      #header-right {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      #header-right-navigation {
+        margin-left: 24px;
+        display: flex;
+        gap: 20px;
+      }
+
+      .header-right-navigation-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 0px 16px;
+        border-radius: 32px;
+        height: 40px;
+      }
+
+      .header-right-navigation-item:hover {
+        cursor: pointer;
+        background-color: rgb(255, 255, 255);
+        font-weight: bold;
+        border: 1px solid blue;
+      }
+
+      .arrow {
+        border: solid black;
+        border-width: 0px 3px 3px 0px;
+        display: inline-block;
+        padding: 3px;
+        transition: transform 0.3s;
+      }
+
+      .down {
+        transform: rotate(45deg);
+      }
+
+      #header-right-navigation-login-button {
+        background-color: transparent;
+        padding: 12px 32px;
+        margin: 0px 0px 0px 9px;
+        border-radius: 48px;
+        color: #003087;
+        border: 1px solid #003087;
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+      #header-right-navigation-login-button:hover {
+        cursor: pointer;
+        border: 1px solid #0070ba;
+        color: #0070ba;
+      }
+
+      #header-right-navigation-sign-up-button {
+        background-color: #003087;
+        padding: 12px 32px;
+        margin: 0px 0px 0px 9px;
+        border-radius: 48px;
+        color: white;
+        border: 1px solid #003087;
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+      #header-right-navigation-sign-up-button:hover {
+        cursor: pointer;
+        border: 1px solid #0070ba;
+        color: #0070ba;
+      }
+
+      section {
+        background-color: rgb(243, 243, 246);
+        /* rgb(243, 243, 246) */
+        width: 1440px;
+        height: 800px;
+        background-attachment: scroll;
+      }
+
+      body-page {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+
+      #image {
+        height: 406.25px;
+        width: 406.25px;
+      }
+
+      .body-text {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .texts {
+        width: 553.12px;
+        margin: 0;
+        color: #003087;
+        font-size: 54;
+        font-weight: 500;
+      }
+
+      .texts h1 {
+        font-size: 50px;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      .texts p {
+        color: #0070e0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <div id="header-left">
+        <a href="https://www.paypal.com/us/home"
+          ><img src="./logo.webp" alt="logo" width="70px" height="70px;"
+        /></a>
+
+        <div id="header-left-navigation">
+          <div class="header-left-navigation-item">
+            <p>Personal</p>
+            <i class="arrow down"></i>
+          </div>
+
+          <div class="header-left-navigation-item">
+            <p>Small Business</p>
+            <i class="arrow down"></i>
+          </div>
+
+          <div class="header-left-navigation-item">
+            <p>Enterprise</p>
+            <i class="arrow down"></i>
+          </div>
+
+          <div class="header-right-navigation-item">
+            <p>Developer</p>
+          </div>
+        </div>
+      </div>
+      <!-- Header-right -->
+
+      <div id="header-right">
+        <div class="header-right-navigation-item">
+          <a href="https://www.paypal.com/us/whats-new/first-look"
+            ><p>What's New</p></a
+          >
+        </div>
+
+        <div class="header-right-navigation-item">
+          <a href="https://www.paypal.com/us/cshelp/personal"><p>Help</p></a>
+        </div>
+
+        <a href="https://www.paypal.com/signin"
+          ><button id="header-right-navigation-login-button">Log in</button></a
+        >
+        <a href="https://www.paypal.com/us/webapps/mpp/account-selection"
+          ><button id="header-right-navigation-sign-up-button">
+            Sign up
+          </button></a
+        >
+      </div>
+    </div>
+
+    <!-- MAIN -->
+
+    <div
+      id="body-page"
+      style="
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+      "
+    >
+      <div class="texts">
+        <h1 style="color: #003087">Join PayPal.</h1>
+        <h1 style="color: #003087">Earn a sweet</h1>
+        <h1 style="color: rgb(0, 112, 224)">$20 cash back</h1>
+        <p>
+          Your first 3 purchases of $30 or more with PayPal can earn you $20
+          cash back (2,000 Rewards points).1 To claim this offer, hit the Sign
+          Up button below.
+        </p>
+        <div>
+          <button
+            class="button-sign-up"
+            style="
+              background-color: rgb(0, 48, 135);
+              color: white;
+              font-size: 16;
+              font-weight: 400;
+              border-radius: 32;
+            "
+          >
+            Sign Up
+          </button>
+        </div>
+        <p>
+          Max 160,000 rewards available. Offer ends 30 days from sign up. Check
+          offer for details.Terms and exclusions apply.
+          <span
+            ><a
+              id="terms"
+              href="https://www.paypal.com/us/legalhub/pp-rewards-program-tnc"
+              >Terms and exclusions apply.</a
+            ></span
+          >
+        </p>
+      </div>
+      <div>
+        <img
+          id="smile"
+          src="./paypal.webp"
+          alt="paypalll"
+          height="450px"
+          width="450px"
+          border-radius="32px"
+        />
+      </div>
+    </div>
+  </body>
+</html>
