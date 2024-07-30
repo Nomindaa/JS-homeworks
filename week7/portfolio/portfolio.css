@@ -1,0 +1,181 @@
+body {
+    color: #3D3D3D;
+    background-color: lightgray;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#vector {
+    border: 1px solid #E7E7E7;
+    background-color: white;
+}
+
+#section-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    gap: 30px;   
+}
+
+#profile-left {
+    border: 7px solid #FBD144;
+    background-color: white;
+    border-radius: 50%;
+    border-color: #FBD144 ;
+    width: 235px;
+    height: 235px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+#profile-picture {
+    width: 215px;
+    height: 215px;
+    gap: 0px;
+    border-radius: 50%;
+}
+
+#profile-right {
+   width: 372px;
+   height: 156px;
+   gap: 30px;
+}
+
+
+.profile-right img {
+    width: 29.82px;
+    height: 30px;
+    top: 3px;
+    left: 3.09px;
+    color: #575757;
+    gap: 24px;
+    border-radius: 12px;
+}
+
+#section-2 {
+    width: Fixed (634px)px;
+    height: Hug (142px)px;
+    top: 441px;
+    left: 547px;
+    padding: 20px 2px 20px 2px;
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+}
+
+#section-2 p{
+    width: Fixed (148px)px;
+    height: Hug (102px)px;
+    gap: 30px;
+}
+
+#section-3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 618px;
+    height: 40px;
+    top: 630px;
+    left: 555px;
+    padding: 65px;
+    
+  
+}
+
+#shar {
+    height: 80px;
+    width: 280px;
+    background-color: #FBD144;
+    border-radius: 12px;
+  
+}
+    
+
+
+#saaral {
+    background: white;
+    height: 80px;
+    width: 280px;
+    border-radius:12px;
+}
+
+
+#arrow {
+    width: 12.99px;
+    height: 17px;
+    top: 2px;
+    left: 4.5px;
+}
+
+#section-4 {
+    display: flex;
+    align-items:center;
+    width: 618px;
+    height: 80px;
+    top: 630px;
+    left: 555px;
+    background-color: white;
+    border-radius: 12px;
+    gap: 30px;
+}
+
+#portfolio {
+    background-color:lightblue;
+    width: 330px;
+    height: 56px;
+    top: 26px;
+    left: 23.75px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+}
+
+#section-5 {
+    width: 757px;
+    height: 826px;
+    top: 982px;
+    left: 485px;
+    border-radius: 20px;
+}
+
+.section-5 img {
+    width: 330px;
+    height: 220px;
+    left: 1px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.pictures1 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 40px;
+}
+
+.pictures2 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 30px;
+}
+
+.pictures3 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 30px;
+}
+    
+
