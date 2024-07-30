@@ -3,6 +3,7 @@ let theme = "light";
 const themeButton = document.getElementById("logo-circle");
 
 function main() {
+  console.log("clicked");
   if (theme === "light") {
     theme = "dark";
     const webTheme = document.getElementById("theme");
@@ -10,7 +11,7 @@ function main() {
   } else {
     theme = "light";
     const webTheme = document.getElementById("theme");
-    webTheme.setAttribute("href", "light.css");
+    webTheme.setAttribute("href", "portfolio.css");
   }
 }
 
